@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.concurrent.StructuredTaskScope;
+
+public class zad1 {
+
+
+
+    public static void main(String[] args){
+        int[] LicznyCalkowite= new int[10];
+        System.out.printf("wprowadz 10 liczb:  ");
+        Scanner scanner = new Scanner(System.in);
+        for(int i = 1;i<=LicznyCalkowite.length;i++){
+            System.out.print("wprowadz liczbe nr" + i + ": ");
+            LicznyCalkowite[i-1] = scanner.nextInt();
+
+        }
+        for(int i = LicznyCalkowite.length - 1 ; i>=0;i--){
+            System.out.print(LicznyCalkowite[i]);
+        }
+
+
+    }
+}
