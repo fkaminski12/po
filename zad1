@@ -1,3 +1,5 @@
+\\Napisz program, który tworzy tablicę jednowymiarową 10 liczb całkowitych, a następnie wyświetla je w konsoli w porządku odwrotnym do wprowadzenia.
+
 import java.util.Scanner;
 import java.util.concurrent.StructuredTaskScope;
 
