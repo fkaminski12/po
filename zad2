@@ -1,0 +1,20 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+public class zad1 {
+    public static void main(String[] args){
+        ArrayList<Integer> LiczbyCalkowite = new ArrayList<>();
+        System.out.println("Wprowadz 10 liczb: ");
+        Scanner scanner = new Scanner(System.in);
+        for (int i =1;i <= 10; i++){
+            System.out.print("Wprowadz liczbe nr : "+ i+":");
+            LiczbyCalkowite.add(scanner.nextInt());
+        }
+        for (int i = LiczbyCalkowite.size() -1;i>=0;i--){
+            System.out.println(LiczbyCalkowite.get(i));
+        }
+    }
+
+
+}
