@@ -1,0 +1,13 @@
+package cw2.zad1;
+
+import java.security.DigestException;
+
+public class Main {
+    public static void main(String[] args) {
+        dog pies1=new dog("Szczur",-20,"owca");
+        dog pies2=new dog("Szczur",-20,"owca");
+        System.out.println(pies1.equals(pies2));
+
+    }
+}
+ 
