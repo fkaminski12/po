@@ -1,0 +1,14 @@
+package zad1;
+
+import java.security.DigestException;
+
+public class Main {
+    public static void main(String[] args) {
+        Results pies1=new Results("owca","wk",4);
+        Results pies2=new Results("Szczur","thc",2);
+        System.out.println(pies2);
+        System.out.println(pies1.equals(pies2));
+
+
+    }
+}
