@@ -1,0 +1,14 @@
+package zad1;
+
+import java.security.DigestException;
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle pies1=new Vehicle("owca","wk",142421424);
+        Vehicle pies2=new Vehicle("Szczur","thc",2005);
+        System.out.println(pies1);
+        System.out.println(pies1.equals(pies2));
+
+
+    }
+}
