@@ -1,0 +1,56 @@
+package cw2.zad1;
+
+import java.util.Date;
+import java.util.Objects;
+
+public class dog {
+    public String name;
+    public int age;
+    public String breed;
+
+
+
+    public dog(String name,int age, String breed) {
+        this.name = name;
+        this.breed = breed;
+        this.age=Math.max(age,0);
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name=name;
+    }
+    public int getAge(){
+        return age;
+    }
+    public void  setAge(int age){
+        this.age=Math.max(age,0);
+    }
+    public String getBreed(){
+        return breed;
+    }
+    public void setBreed(String breed){
+        this.breed=breed;
+    }
+    @Override
+    public String toString(){
+       return getName()+" "+ getAge()+" "+getBreed();
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (!(other instanceof dog that)){
+            return false;
+            }
+        else {
+            return this.name.equals(that.name) && this.age==that.age && this.breed.equals(that.breed);
+            }
+        }
+    @Override
+    public int hashCode(){
+        return Objects.hash(name,age,breed);
+    }
+}
+
+ 

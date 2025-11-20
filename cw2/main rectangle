@@ -1,0 +1,8 @@
+package zad2;
+
+public class main {
+    public static void main(String[] args) {
+        Rectangle rectagle1= new Rectangle (12,23);
+        System.out.println(rectagle1.calculateArea());
+    }
+}

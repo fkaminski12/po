@@ -1,0 +1,71 @@
+package zad1;
+
+import java.util.Objects;
+
+public class Vehicle {
+    private String brand;
+    private String model;
+    private int yearOfProduction;
+
+    public Vehicle(String brand, String model, int yearOfProduction) {
+        setBrand(brand);
+        setModel(model);
+        setYearOfProduction(yearOfProduction);
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        if (brand == null || brand.isEmpty()) {
+            this.brand = "";
+        } else {
+            this.brand = brand;
+        }
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        if (model == null || model.isEmpty()) {
+            this.model = "";
+        } else {
+            this.model = model;
+        }
+    }
+
+    public int getYearOfProduction() {
+        return yearOfProduction;
+    }
+
+    public void setYearOfProduction(int yearOfProduction) {
+        if (yearOfProduction > 2025) {
+            this.yearOfProduction = 2025;
+        } else {
+            this.yearOfProduction = yearOfProduction;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle: " + getBrand() + " " + getModel() + " YearOfProduction: " + getYearOfProduction();
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (!(other instanceof Vehicle that)) {
+            return false;
+        }
+        return this.brand.equals(that.brand)
+                && this.model.equals(that.model)
+                && this.yearOfProduction == that.yearOfProduction;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(brand, model, yearOfProduction);
+    }
+}
