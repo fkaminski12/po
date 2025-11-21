@@ -1,0 +1,33 @@
+package Sumaszeregow;
+import java.util.Scanner;
+
+public class Zada1 {
+
+
+    public static int sumaSzeregu(int n) {
+        int suma = 0;
+        for (int i = 1; i <= n; i++) {
+            if (i % 2 == 0) {
+                suma -= i;
+            } else {
+                suma += i;
+            }
+        }
+        return suma;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj dodatnią liczbę całkowitą n: ");
+        int n = scanner.nextInt();
+
+        if (n <= 0) {
+            System.out.println("Liczba musi być dodatnia!");
+        } else {
+            int wynik = sumaSzeregu(n);
+            System.out.println("Suma szeregu wynosi: " + wynik);
+        }
+
+        scanner.close();
+    }
+}
