@@ -1,0 +1,8 @@
+package cw4;
+
+public class Main {
+    public static void main(String[] args) {
+        Enployee emp = new Enployee("jan","kowalski");
+        emp.displayData();
+    }
+}
