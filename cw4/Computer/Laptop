@@ -1,0 +1,40 @@
+package cw4.konkuter;
+
+import java.util.ArrayList;
+import java.util.Objects;
+
+public class Laptop extends Computer{
+    double weight;
+    public Laptop(double weight,String manufacturer, String model, ArrayList<Double> partsPrices){
+        super(manufacturer, model, partsPrices);
+        this.weight = weight;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+    @Override
+    public String toString()
+    {
+        return "Laptop{" + "weight=" + weight + '}';
+
+    }
+    @Override
+    public boolean equals(Object o)
+    {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Laptop laptop = (Laptop) o;
+        return Double.compare(laptop.weight, weight) == 0 && Objects.equals(laptop, laptop);
+
+    }
+    @Override
+    public int hashCode()
+    {
+        return Objects.hash(super.hashCode(), weight);
+    }
+}
