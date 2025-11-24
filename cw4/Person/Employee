@@ -1,0 +1,18 @@
+package cw4;
+
+public class Enployee extends Person {
+    public Enployee(String firstName, String lastName) {
+        super(firstName, lastName);
+        this.lastName= lastName;
+
+
+    }
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
+    }
+    public void displayData() {
+        System.out.println("First Name: " + firstName);
+        System.out.println("Last Name: " + lastName);
+    }
+}
