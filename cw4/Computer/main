@@ -1,0 +1,36 @@
+package cw4;
+
+import cw4.konkuter.Desktop;
+import cw4.konkuter.Laptop;
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Double> laptopParts = new ArrayList<>();
+        laptopParts.add(599.99);
+        laptopParts.add(249.50);
+
+        ArrayList<Double> desktopParts = new ArrayList<>();
+        desktopParts.add(399.99);
+        desktopParts.add(199.99);
+        desktopParts.add(99.99);
+
+        Laptop laptop = new Laptop(2.1, "Dell", "Inspiron 15", laptopParts);
+        Desktop desktop = new Desktop("HP", "Pavilion", desktopParts, "Tower");
+
+        System.out.println("Laptop:");
+        System.out.println(laptop);
+
+        System.out.println("\nDesktop:");
+        System.out.println(desktop);
+
+
+        Laptop laptop2 = new Laptop(2.1, "Dell", "Inspiron 15", laptopParts);
+        System.out.println("\nCzy laptop == laptop2? " + laptop.equals(laptop2));
+
+
+        System.out.println("Hash laptop: " + laptop.hashCode());
+        System.out.println("Hash laptop2: " + laptop2.hashCode());
+    }
+}
