@@ -1,0 +1,19 @@
+package zad2;
+
+public class Smartphone extends  ElectronicDevice {
+    public Smartphone(String Manufacturer, String Model, int productionYear) {
+        super(Manufacturer, Model, productionYear);
+    }
+
+    @Override
+    public void Turnon() {
+        System.out.println(Manufacturer + " " + Model + " " + productionYear);
+
+    }
+
+    @Override
+    public void Turnoff() {
+        System.out.println(Manufacturer + " " + Model + " " + productionYear);
+
+    }
+}
