@@ -1,0 +1,9 @@
+package zad3;
+
+public class Book extends Product{
+    @Override
+    public double GetPrice(){
+        return 29.99;
+
+    }
+}
