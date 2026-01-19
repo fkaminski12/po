@@ -1,0 +1,21 @@
+package zad2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<ElectronicDevice> wlacz = new ArrayList<>();
+        wlacz.add(new Laptop("ww","www",9));
+        wlacz.add(new Television("wqerqwrqw","dasfas",1999));
+        wlacz.add(new Smartphone("wqerqwrqw","dasfas",1999));
+
+        for (ElectronicDevice wlaczy: wlacz){
+            wlaczy.Turnoff();
+            wlaczy.Turnon();
+            System.out.println();
+        }
+
+    }
+
+}
