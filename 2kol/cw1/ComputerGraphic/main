@@ -1,0 +1,25 @@
+package zad1;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class main {
+    public static void main(String[] args) {
+        List<ComputerGraphic> graphics = new ArrayList<>();
+
+
+        graphics.add(new Bitmap(800, 600, "image1.bmp"));
+        graphics.add(new Vector(1024, 768, "vector1.svg"));
+        graphics.add(new Bitmap(640, 480, "image2.bmp"));
+        graphics.add(new Vector(1920, 1080, "vector2.svg"));
+        graphics.add(new Bitmap(1280, 720, "image3.bmp"));
+
+
+        for (ComputerGraphic graphic : graphics) {
+            graphic.loadFile();
+            graphic.saveFile();
+            System.out.println();
+        }
+    }
+
+    }
