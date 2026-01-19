@@ -1,0 +1,17 @@
+package zad2;
+
+abstract class ElectronicDevice {
+    protected String Manufacturer;
+    protected String Model;
+    protected int productionYear;
+    public ElectronicDevice(String Manufacturer, String Model, int productionYear) {
+        this.Manufacturer = Manufacturer;
+        this.Model = Model;
+        this.productionYear = productionYear;
+
+    }
+    public abstract void Turnon();
+    public abstract void Turnoff();
+
+
+}
