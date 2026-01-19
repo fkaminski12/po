@@ -1,0 +1,17 @@
+package zad3;
+
+public class TestProduct {
+    public static void main(String[] args) {
+        Product[] product = new Product[5];
+
+        product[0] = new Book();
+        product[1] = new Clothing();
+        product[2] = new Book();
+        product[3] = new Clothing();
+        product[4] = new Book();
+        for (Product products : product) {
+            System.out.println(products.GetPrice());
+        }
+
+    }
+}
