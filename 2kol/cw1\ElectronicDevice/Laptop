@@ -1,0 +1,16 @@
+package zad2;
+
+public class Laptop extends ElectronicDevice{
+    public Laptop(String Manufacturer, String Model, int productionYear) {
+        super(Manufacturer, Model, productionYear);
+
+    }
+    @Override
+    public void Turnoff() {
+    }
+    @Override
+    public void Turnon(){
+        System.out.println(Manufacturer + " " + Model + " " + productionYear);
+
+    }
+}
