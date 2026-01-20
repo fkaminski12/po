@@ -1,0 +1,8 @@
+package zad4;
+
+public class AdventureGame extends GAME{
+    @Override
+    public double getRating(){
+        return 7.3;
+    }
+}
